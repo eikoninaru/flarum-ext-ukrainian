@@ -41,41 +41,41 @@ core:
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "Это <strong>бета-версия</strong> программного обеспечения, разработанная для того, чтобы помочь нам протестировать работоспособность всех функции движка. Бета-версия не должна использоваться на уже работающих сообществах."
-      contributing_text: "Хотите искать ошибки и помогать в разработке? Прочитайте <a>Contributing</a>."
-      extension_text: "Заинтересованы в разработке расширений? Прочитайте <a>Extension</a>."
-      features_text: "Имеются идеи для улучшения функций? Расскажите об этом нам в разделе <a>Features</a>."
-      support_text: "Наши ошибку? Пожалуйста, сообщите об этом нам в разделе <a>Support</a>."
-      troubleshooting_text: "Имеются проблемы? Следуйте инструкциям в <a>Troubleshooting</a>."
-      version_text: "Благодарим за выбор Flarum! Вы используете версию {version}. Пакет локализации разработан CYBERSPACE.Industries. Техническая поддержка: Flarum.HELP."
-      welcome_text: "Добро пожаловать на Flarum Beta!"
+      beta_warning_text: "Це <strong>бета-версія</strong> програмного забезпечення, розроблена для того, щоб допомогти нам протестувати працездатність всіх функції движка. Не використовуйте бета-версію на вже працюючих спільнотах."
+      contributing_text: "Хочете шукати помилки і допомагати в розробці? Прочитайте <a>Contributing</a>."
+      extension_text: "Зацікавлені в розробці розширень? Прочитайте <a>Extension</a>."
+      features_text: "Є ідеї для покращення функцій? Розкажіть про це нам в розділі <a>Features</a>."
+      support_text: "Знайшли помилку? Будь ласка , повідомте про це нам в розділі <a>Support</a>."
+      troubleshooting_text: "Є проблеми? Дотримуйтесь інструкцій в <a>Troubleshooting</a>."
+      version_text: "Дякуємо за вибір Flarum! Ви використовуєте версію {version}. Пакет локалізації розроблений CYBERSPACE.Industries. Технічна підтримка: Flarum.HELP."
+      welcome_text: "Ласкаво просимо на Flarum Beta!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "Настройка внешнего вида форума при помощи пользовательского кода LESS/CSS, который переопределяет <a>стандартные стилевые конструкции</a> Flarum."
+      customize_text: "Налаштування зовнішнього вигляду форуму за допомогою користувацького коду LESS/CSS, який перекриває <a>стандартні стильові конструкції </a> Flarum."
       submit_button: => core.ref.save_changes
-      title: "Редактирование CSS"
+      title: "Редагування CSS"
 
     # These translations are used in the Edit Group modal dialog.
     edit_group:
-      color_label: "Цвет"
-      delete_button: "Удалить группу"
-      delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи, находящиеся в этой группе, не будут удалены."
-      icon_label: "Иконка"
-      icon_text: "Введите название любого класса иконки <a>Font Awesome</a>, <em>без</em> префикса <code>fa-</code>."
-      name_label: "Название"
-      plural_placeholder: "Множественное число (т.е. Модеры)"
-      singular_placeholder: "Единственное число (т.е. Модер)"
+      color_label: "Колір"
+      delete_button: "Видалити групу"
+      delete_confirmation: "Ви впевнені , що хочете видалити групу? Користувачі, що знаходяться в цій групі, не будуть видалені."
+      icon_label: "Іконка"
+      icon_text: "Введіть назву будь-якого класу іконки <a>Font Awesome</a>, <em>без</em> префіксу <code>fa-</code>."
+      name_label: "Назва"
+      plural_placeholder: "Множина (Приклад: Модератори)"
+      singular_placeholder: "Однина (Приклад: Модератор)"
       submit_button: => core.ref.save_changes
-      title: "Создание группы"
+      title: "Створити групу"
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: "Добавить расширение"
-      disable_button: "Отключить"
-      enable_button: "Включить"
+      add_button: "Додати розширення"
+      disable_button: "Відключити"
+      enable_button: "Включити"
       settings_button: => core.ref.settings
-      uninstall_button: "Удалить"
+      uninstall_button: "Видалити"
 
     # These translations are used in the session dropdown menu.
     header:
@@ -83,51 +83,51 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: "Пожалуйста, подождите..."
+      title: "Будь ласка зачекайте..."
 
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: "Оформление"
-      appearance_text: "Настройка цветов, логотипов и других переменных."
-      basics_button: "Основные настройки"
-      basics_text: "Настройка названия форума, локализации и других базовых параметров."
+      appearance_button: "Оформлення"
+      appearance_text: "Налаштування кольорів, логотипів та інших змінних."
+      basics_button: "Основні налаштування"
+      basics_text: "Налаштування нази форуму, локалізації та інших базових параметрів."
       dashboard_button: "Консоль"
-      dashboard_text: "Первый взгляд на Ваш форум."
-      extensions_button: "Расширения"
-      extensions_text: "Добавление дополнительного функционала при помощи расширений."
-      permissions_button: "Разрешения"
-      permissions_text: "Настройка прав доступа для групп пользователей."
+      dashboard_text: "Перший погляд на Ваш форум."
+      extensions_button: "Розширення"
+      extensions_text: "Додавання додаткового функціоналу за допомогою розширень."
+      permissions_button: "Розширення"
+      permissions_text: "Налаштування прав доступу для груп користувачів."
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_renaming_label: "Разрешить переименование"
-      allow_post_editing_label: "Разрешить править сообщение"
-      create_heading: "Создание"
-      delete_discussions_forever_label: "Удалять дискуссии (физически)"
-      delete_discussions_label: "Удалять дискуссии"
-      delete_posts_forever_label: "Удалять сообщения (физически)"
-      edit_and_delete_posts_label: "Править и удалять сообщения"
-      global_heading: "Глобальные"
-      moderate_heading: "Модерация"
-      new_group_button: "Новая группа"
-      participate_heading: "Участие"
-      read_heading: "Чтение"
-      rename_discussions_label: "Переименовывать дискуссии"
-      reply_to_discussions_label: "Отвечать в дискуссии"
-      sign_up_label: "Регистрация"
-      start_discussions_label: "Создать дискуссии"
-      view_discussions_label: "Читать дискуссию"
+      allow_renaming_label: "Дозволити перейменування"
+      allow_post_editing_label: "Дозволити редагувати повідомлення"
+      create_heading: "Створити"
+      delete_discussions_forever_label: "Видаляти дискусії (фізично)"
+      delete_discussions_label: "Видаляти дискусії"
+      delete_posts_forever_label: "Видаляти повідомлення (фізично)"
+      edit_and_delete_posts_label: "Редагувати і видаляти повідомлення"
+      global_heading: "Глобальні"
+      moderate_heading: "Модерація"
+      new_group_button: "Нова група"
+      participate_heading: "Участь"
+      read_heading: "Читати"
+      rename_discussions_label: "Перейменовувати дискусії"
+      reply_to_discussions_label: "Відповідати в дискусіях"
+      sign_up_label: "Реєстрація"
+      start_discussions_label: "Створювати дискусії"
+      view_discussions_label: "Читати дискусії"
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
-      allow_indefinitely_button: "Неограниченно"
-      allow_some_minutes_button: "На {count} минуты|На {count} минут"
-      allow_ten_minutes_button: "На 10 минут"
-      allow_until_reply_button: "До ответа"
-      everyone_button: "Все"
+      allow_indefinitely_button: "Необмежено"
+      allow_some_minutes_button: "На {count} хвилини|На {count} хвилин"
+      allow_ten_minutes_button: "На 10 хвилин"
+      allow_until_reply_button: "До відповіді"
+      everyone_button: "Всі"
       members_button: => core.group.members
-      signup_closed_button: "Закрыто"
-      signup_open_button: "Открыто"
+      signup_closed_button: "Закрито"
+      signup_open_button: "Відкрито"
 
     # These translations are used in the Settings modal dialog.
     settings:
@@ -139,67 +139,67 @@ core:
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-      confirm_password_label: "Подтвердите пароль"
+      confirm_password_label: "Підтвердіть пароль"
       dismiss_button: => core.ref.okay
-      incorrect_password_message: "Введённый Вами пароль неверный."
+      incorrect_password_message: "Введений Вами пароль невірний."
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: "Отправить пароль на E-mail"
-      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Ваш E-mail."
+      send_button: "Надіслати пароль на E-mail"
+      text: "Натисніть на кнопку нижче для відправки посилання для зміни пароля на Ваш E-mail."
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
     composer:
-      close_tooltip: "Закрыть"
-      exit_full_screen_tooltip: "Выход из полноэкранного режима"
-      full_screen_tooltip: "Развернуть"
-      minimize_tooltip: "Свернуть"
+      close_tooltip: "Закрити"
+      exit_full_screen_tooltip: "Вихід з повноекранного режиму"
+      full_screen_tooltip: "Розгорнути"
+      minimize_tooltip: "Згорнути"
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: "Написать сообщение..."
-      discard_confirmation: "Вы не создали дискуссию. Вы хотите отменить дискуссию?"
-      submit_button: "Отправить"
+      body_placeholder: "Написати повідомлення..."
+      discard_confirmation: "Ви не створили дискусію. Ви хочете скасувати створення дискусії?"
+      submit_button: "Відправити"
       title: => core.ref.start_a_discussion
-      title_placeholder: "Название дискуссии"
+      title_placeholder: "Назва дискусії"
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "Вы не сохранили изменения. Вы хотите отказаться от них?"
-      post_link: "Сообщение #{number} в {discussion}"
+      discard_confirmation: "Ви не зберегли зміни. Ви хочете відмовитися від них?"
+      post_link: "Повідомлення #{number} в {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Вы не отправили свой ответ. Вы хотите отменить сообщение?"
-      posted_message: "Ваш ответ опубликован."
-      submit_button: "Отправить"
-      view_button: "Посмотреть"
+      discard_confirmation: "Ви не відправили свою відповідь. Ви хочете скасувати створення повідомлення?"
+      posted_message: "Ваш відповідь опублікована."
+      submit_button: "Відправити"
+      view_button: "Переглянути"
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: "Нельзя ответить"
-      cannot_reply_text: "У Вас нет прав доступа для публикации ответа в этой дискуссии."
+      cannot_reply_button: "Не можна відповісти"
+      cannot_reply_text: "У Вас немає прав доступу для публікації відповіді в цій дискусії."
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить дискуссию?"
+      delete_confirmation: "Ви впевнені, що хочете видалити дискусію?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: "Войти для ответа"
-      rename_button: "Переименовать"
-      rename_text: "Введите название для этой дискуссии:"
+      log_in_to_reply_button: "Увійти для відповіді"
+      rename_button: "Перейменувати"
+      rename_text: "Введіть назву для цієї дискусії:"
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Кажется, здесь нет дискуссий. Почему бы Вам не создать новую?"
+      empty_text: "Тут немає дискусій. Чому б Вам не створити?"
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: "Отметить как прочитанное"
-      replied_text: "{username} ответил(а) {ago}"
-      started_text: "{username} создал(а) {ago}"
+      mark_as_read_tooltip: "Позначити як прочитане"
+      replied_text: "{username} відповів(ла) {ago}"
+      started_text: "{username} створив(ла) {ago}"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -212,61 +212,61 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если Вы не получили письмо в течение нескольких минут."
-      not_found_message: "There is no user registered with that email address."
-      submit_button: "Восстановить пароль"
-      text: "Введите свой E-mail, и мы вышлем Вам ссылку для сброса пароля."
-      title: "Забыли пароль"
+      email_sent_message: "Ми відправили Вам лист, що містить посилання для відновлення пароля. Перевірте папку зі спамом, якщо Ви не отримали листа протягом деякого часу."
+      not_found_message: "Користувача з таким E-mail не знайденно."
+      submit_button: "Відновити пароль"
+      text: "Введіть свій E-mail, і ми надішлемо Вам посилання для відновлення пароля."
+      title: "Забули пароль"
 
     # These translations are used in the header and session dropdown menu.
     header:
-      admin_button: "Администрирование"
+      admin_button: "Адміністрування"
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
-      profile_button: "Профиль"
-      search_placeholder: "Поиск..."
+      profile_button: "Профіль"
+      search_placeholder: "Пошук..."
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: "Нельзя создать"
-      mark_all_as_read_confirmation: "Are you sure you want to mark all discussions as read?"
+      cannot_start_discussion_button: "Не можна створити"
+      mark_all_as_read_confirmation: "Ви впевнені, що хочете позначити всі дискусії як прочитані?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      refresh_tooltip: "Обновить"
+      refresh_tooltip: "Оновити"
       start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: "Последние"
-      newest_button: "Новые"
-      oldest_button: "Старые"
-      relevance_button: "По релевантности"
-      top_button: "Популярные"
+      latest_button: "Останні"
+      newest_button: "Нові"
+      oldest_button: "Старі"
+      relevance_button: "За релевантністю"
+      top_button: "Популярні"
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      forgot_password_link: "Забыли пароль?"
-      invalid_login_message: "Ваши данные для входа некорректны."
+      forgot_password_link: "Забули пароль?"
+      invalid_login_message: "Ваші дані для входу некоректні."
       password_placeholder: => core.ref.password
-      sign_up_text: "Нет аккаунта? <a>Регистрация</a>"
+      sign_up_text: "Немає облікового запису? <a>Реєстрація</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
-      username_or_email_placeholder: "Имя пользователя или E-mail"
+      username_or_email_placeholder: "Ім'я користувача або E-mail"
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} изменил(а) название"
-      empty_text: "Нет оповещений"
+      discussion_renamed_text: "{username} змінив(ла) назву"
+      empty_text: "Немає оповіщень"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
     # These translations are used by tooltips displayed for individual posts.
     post:
-      edited_tooltip: "{username} отредактировал(а) {ago}"
-      number_tooltip: "Сообщение #{number}"
+      edited_tooltip: "{username} відредагував(ла) {ago}"
+      number_tooltip: "Повідомлення #{number}"
 
     # These translations are used by the post control buttons.
     post_controls:
@@ -277,91 +277,91 @@ core:
 
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
-      now_link: "Сейчас"
-      original_post_link: "Начало"
+      now_link: "Зараз"
+      original_post_link: "Початок"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщений|{index} из {count} сообщений"
+      viewing_text: "{index} з {count} повідомлень"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_text: '{username} изменил(а) название с "{old}" на "{new}".'
+      discussion_renamed_text: '{username} змінив(ла) назву з "{old}" на "{new}".'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
-      time_lapsed_text: "{period} позже"
+      time_lapsed_text: "{period} пізніше"
 
     # These translations are used by the search results dropdown list.
     search:
-      all_discussions_button: 'Поиск по запросу: "{query}"'
+      all_discussions_button: 'Пошук за запитом: "{query}"'
       discussions_heading: => core.ref.discussions
-      users_heading: "Пользователи"
+      users_heading: "Користувачі"
 
     # These translations are used in the Settings page.
     settings:
-      account_heading: "Аккаунт"
+      account_heading: "Обліковий запис"
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: "Web"
-      notify_discussion_renamed_label: "Кто-то переименовал мою дискуссию"
-      privacy_disclose_online_label: "Показывать онлайн-статус"
-      privacy_heading: "Конфиденциальность"
+      notify_discussion_renamed_label: "Хтось перейменував мою дискусію"
+      privacy_disclose_online_label: "Показувати онлайн-статус"
+      privacy_heading: "Конфіденційність"
       title: => core.ref.settings
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
-      log_in_text: "Уже зарегистрированы? <a>Войти</a>"
+      log_in_text: "Зареєстровані? <a>Увійти</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "Привет, {username}!"
+      welcome_text: "Привіт, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
-      avatar_remove_button: "Удалить"
-      avatar_upload_button: "Загрузить"
-      bio_placeholder: "Напишите что-нибудь о себе"
+      avatar_remove_button: "Видалити"
+      avatar_upload_button: "Завантажити"
+      bio_placeholder: "Напишіть що-небудь про себе"
       discussions_link: => core.ref.discussions
       in_discussion_text: 'в "{discussion}"'
-      joined_date_text: "Регистрация: {ago}"
-      online_text: "В сети"
+      joined_date_text: "Реєстрація: {ago}"
+      online_text: "Онлайн"
       posts_load_more_button: => core.ref.load_more
-      posts_link: "Сообщения"
+      posts_link: "Повідомлення"
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
     user_controls:
-      button: "Управление"
+      button: "Управління"
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Все сообщения пользователя также будут удалены."
+      delete_confirmation: "Ви впевнені, що хочете видалити користувача? Всі повідомлення, написані користувачем, також будуть видалені."
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
       alert_message: => core.ref.confirmation_email_sent
-      resend_button: "Повторно отправить подтверждение по E-mail"
-      sent_message: "Отправлено"
+      resend_button: "Повторно відправити підтвердження на E-mail"
+      sent_message: "Відправлено"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: "Обсуждение скрыто"
+      hidden_tooltip: "Дискусія прихована"
 
     # These translations are used to modify usernames.
     username:
-      deleted_text: "[удалён]"
+      deleted_text: "[видалений]"
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
-      not_found_message: "Запрашиваемый ресурс не найден."
-      permission_denied_message: "У Вас нет прав доступа для выполнения этого действия."
-      rate_limit_exceeded_message: "Вы размещаете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
+      generic_message: "Помилка. Будь ласка , оновіть сторінку та спробуйте ще раз."
+      not_found_message: "Ресурс не знайдено."
+      permission_denied_message: "У Вас немає прав доступу для виконання цієї дії."
+      rate_limit_exceeded_message: "Ви розміщуєте повідомлення занадто часто. Будь ласка , спробуйте ще раз через деякий час."
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -371,16 +371,16 @@ core:
     # These translations are used to punctuate a series of items.
     series:
       glue_text: ", "
-      three_text: "{first}, {second}, и {third}"
-      two_text: "{first} и {second}"
+      three_text: "{first}, {second} та {third}"
+      two_text: "{first} і {second}"
 
   # Translations in this namespace are used in basic HTML interface.
   basic:
-    javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
-    load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
-    loading_text: "Загрузка..."
-    next_page_button: "Следующая страница"
-    previous_page_button: "Предыдущая страница"
+    javascript_disabled_message: "Цей сайт найкраще переглядати в сучасному браузері з включеним JavaScript."
+    load_error_message: "Щось пішло не так під час спроби завантаження повної версії цього сайту."
+    loading_text: "Завантаження..."
+    next_page_button: "Наступна сторінка"
+    previous_page_button: "Попередня сторінка"
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -388,41 +388,32 @@ core:
     # These translations are used in emails sent when users register new accounts.
     activate_account:
       body: |
-        Привет, {username}!
-
-        Кто-то (надеемся, что Вы!) зарегистрировался на форуме {forum} с этим адресом электронной почты.
-
-        Если это были Вы, просто нажмите на ссылку и Ваш аккаунт будет активирован:
+        Привіт, {username}!
+        Хтось (сподіваємось , що Ви!) зареєструвався на форумі {forum} і вказав цей E-mail.
+        Якщо це були Ви , просто натисніть на посилання і Ваш аккаунт буде активований:
         {url}
-
-        Если Вы не регистрировались, пожалуйста, проигнорируйте это сообщение.
-      subject: "Активация Вашего аккаунта"
+        Якщо Ви не реєструвалися , будь ласка проігноруйте це повідомлення.
+      subject: "Активація Вашого облікового запису"
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
       body: |
-        Привет, {username}!
-
-        Кто-то (надеемся, что Вы!) изменил адрес электронной почты на форуме {forum}.
-
-        Если это были Вы, просто нажмите на ссылку и Ваш адрес электронной почты будет подтверждён:
+        Привіт, {username}!
+        Хтось (сподіваємось , що Ви!) змінив E-mail на форумі {forum}.
+        Якщо це були Ви , просто натисніть на посилання і Ваш  E-mail зміненно:
         {url}
-
-        Если это не Вы, пожалуйста, проигнорируйте это сообщение.
-      subject: "Подтверждение нового адреса электронной почты"
+        Якщо це не Ви, будь ласка проігноруйте це повідомлення.
+      subject: "Підтвердження нового E-mail"
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
       body: |
-        Привет, {username}!
-
-        Кто-то (надеемся, что Вы!) подал запрос на сброс пароля для Вашего аккаунта на форуме {forum}.
-
-        Если это были Вы, нажмите на ссылку для сброса пароля:
+        Привіт, {username}!
+        Хтось (сподіваємось , що Ви!) подав запит на зміну пароля для Вашого облікового запису на форумі {forum}.
+        Якщо це були Ви , просто натисніть на посилання для зміни паролю:
         {url}
-
-        Если Вы не хотите менять свой пароль, просто проигнорируйте это сообщение и ничего не произойдёт.
-      subject: "Сбросить пароль"
+        Якщо Ви не хочете змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
+      subject: "Скинути пароль"
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -430,31 +421,31 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: "Все дискуссии"
-    change_email: "Изменить E-mail"
-    change_password: "Изменить пароль"
-    confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
-    delete: "Удалить"
-    delete_forever: "Удалить (физ.)"
-    discussions: "Дискуссии"
-    edit: "Править"
+    all_discussions: "Всі дискусії"
+    change_email: "Змінити E-mail"
+    change_password: "Змінити пароль"
+    confirmation_email_sent: "Ми відправили лист з підтвердженням на адресу {email}. Якщо Ви не отримаєте лист найближчим часом, перевірте папку зі спамом."
+    delete: "Видалити"
+    delete_forever: "Видалити (физічно)"
+    discussions: "Дискусії"
+    edit: "Редагувати"
     email: "E-mail"
-    load_more: "Загрузить ещё"
-    log_in: "Войти"
-    log_out: "Выйти"
-    mark_all_as_read: "Отметить всё как прочитанное"
-    notifications: "Оповещения"
+    load_more: "Завантажити ще"
+    log_in: "Увійти"
+    log_out: "Вийти"
+    mark_all_as_read: "Позначити все, як прочитане"
+    notifications: "Оповіщення"
     okay: "OK"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
-    reply: "Ответить"                               # Referenced by flarum-mentions.yml
-    restore: "Восстановить"
-    save_changes: "Сохранить"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
-    settings: "Настройки"
-    sign_up: "Регистрация"
-    some_others: "{count} другому|{count} другим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: "Создать дискуссию"
-    username: "Имя пользователя"
-    write_a_reply: "Написать ответ..."
+    reply: "Відповісти"                               # Referenced by flarum-mentions.yml
+    restore: "Відновити"
+    save_changes: "Зберегти"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
+    settings: "Налаштування"
+    sign_up: "Реєстрація"
+    some_others: "{count} іншому|{count} іншим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
+    start_a_discussion: "Створити дискусію"
+    username: "Ім'я користувача"
+    write_a_reply: "Написати відповідь..."
     you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
@@ -463,11 +454,11 @@ core:
 
   # Translations in this namespace are used to translate default group names.
   group:
-    admin: "Админ"
-    admins: "Админы"
-    guest: "Гость"
-    guests: "Гости"
-    member: "Пользователь"
-    members: "Пользователи"
-    mod: "Модер"
-    mods: "Модеры"
+    admin: "Адміністратор"
+    admins: "Адміністратори"
+    guest: "Гість"
+    guests: "Гості"
+    member: "Користувач"
+    members: "Користувачі"
+    mod: "Модератор"
+    mods: "Модератори"
