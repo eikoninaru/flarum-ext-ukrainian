@@ -3,14 +3,6 @@
 //! author : zemlanin : https://github.com/zemlanin
 //! Author : Menelion Elensúle : https://github.com/Oire
 
-;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['moment'], factory) :
-   factory(global.moment)
-}(this, function (moment) { 'use strict';
-
-
     function plural(word, num) {
         var forms = word.split('_');
         return num % 10 === 1 && num % 100 !== 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]);
@@ -52,7 +44,11 @@
         };
     }
 
+<<<<<<< HEAD
 	moment.locale('uk', {
+=======
+    moment.locale('uk', {
+>>>>>>> a6e762331cdaf5175d51531ed936da5f5d0afb8c
         months : {
             'format': 'січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня'.split('_'),
             'standalone': 'січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень'.split('_')
@@ -140,7 +136,3 @@
             doy : 7  // The week that contains Jan 1st is the first week of the year.
         }
     });
-
-    return uk;
-
-}));
