@@ -18,7 +18,7 @@
     ],
     "support": {
         "issues": "https://github.com/eikoninaru/flarum-ext-ukrainian/issues",
-        "source": "https://github.com/eikoninaru/flarum-ext-ukrainianh",
+        "source": "https://github.com/eikoninaru/flarum-ext-ukrainian",
         "forum": "https://linuxmint.com.ua/"
     },
     "require": {
@@ -38,7 +38,7 @@
             }
         },
         "flarum-locale": {
-            "code": "ua",
+            "code": "uk",
             "title": "Україньска"
         }
     }
