@@ -47,7 +47,7 @@ core:
       features_text: "Є ідеї для покращення функцій? Розкажіть про це нам в розділі <a>Features</a>."
       support_text: "Знайшли помилку? Будь ласка , повідомте про це нам в розділі <a>Support</a>."
       troubleshooting_text: "Є проблеми? Дотримуйтесь інструкцій в <a>Troubleshooting</a>."
-      version_text: "Дякуємо за вибір Flarum! Ви використовуєте версію {version}. Пакет локалізації розроблений CYBERSPACE.Industries. Технічна підтримка: Flarum.HELP."
+      version_text: "Дякуємо за вибір Flarum! Ви використовуєте версію {version}. Пакет локалізації розробив <em>Игорь Киселюк</em> (https://www.facebook.com/sonicua?fref=ufi). Технічна підтримка: Flarum.HELP (pociйська)."
       welcome_text: "Ласкаво просимо на Flarum Beta!"
 
     # These translations are used in the Edit Custom CSS modal dialog.
