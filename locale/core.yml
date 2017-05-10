@@ -444,33 +444,42 @@ core:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
+      subject: "Активація Вашого облікового запису"
       body: |
         Привіт, {username}!
+
         Хтось (сподіваємось , що Ви!) зареєструвався на форумі {forum} і вказав цей E-mail.
+
         Якщо це були Ви , просто натисніть на посилання і Ваш аккаунт буде активований:
         {url}
+
         Якщо Ви не реєструвалися , будь ласка проігноруйте це повідомлення.
-      subject: "Активація Вашого облікового запису"
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
+      subject: "Підтвердження нового E-mail"
       body: |
         Привіт, {username}!
+
         Хтось (сподіваємось , що Ви!) змінив E-mail на форумі {forum}.
+
         Якщо це були Ви , просто натисніть на посилання і Ваш  E-mail зміненно:
         {url}
+
         Якщо це не Ви, будь ласка проігноруйте це повідомлення.
-      subject: "Підтвердження нового E-mail"
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
+      subject: "Скинути пароль"
       body: |
         Привіт, {username}!
+
         Хтось (сподіваємось , що Ви!) подав запит на зміну пароля для Вашого облікового запису на форумі {forum}.
+
         Якщо це були Ви , просто натисніть на посилання для зміни паролю:
         {url}
+
         Якщо Ви не хочете змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
-      subject: "Скинути пароль"
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!

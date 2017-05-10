@@ -37,6 +37,7 @@ flarum-flags:
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
       empty_text: "Немає повідомлень на модерації"
+      item_text: "{username} у <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
