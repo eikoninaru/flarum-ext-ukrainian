@@ -124,7 +124,7 @@ core:
       email_text: "Налаштування параметрів електронної пошти."
       extensions_button: "Розширення"
       extensions_text: "Додавання додаткового функціоналу за допомогою розширень."
-      permissions_button: "Розширення"
+      permissions_button: "Дозволи"
       permissions_text: "Налаштування прав доступу для груп користувачів."
 
     # These translations are used in the Permissions page of the admin interface.
