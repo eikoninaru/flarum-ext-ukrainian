@@ -18,11 +18,18 @@ core:
       colored_header_label: "Кольорова шапка"
       colors_heading: "Кольори"
       colors_text: "Виберіть два кольори для стилізації форуму. Перший буде використовуватися в якості кольору підсвічування, другий буде використовуватися в якості фону стильових елементів."
+      custom_header_heading: "Користувальницький заголовок"
+      custom_header_text: "Спеціальний HTML, який буде відображатися в самому верху сторінки над власним заголовком Flarum."
       custom_styles_heading: "Призначені для користувача стилі"
       custom_styles_text: "Налаштування зовнішнього вигляду форуму за допомогою призначеного для користувача коду LESS / CSS, який перекриває стандартні стильові конструкції Flarum."
       dark_mode_label: "Темний режим"
       edit_css_button: "Редагувати CSS"
+      edit_header_button: "Редагувати заголовок"
       enter_hex_message: "Будь ласка, введіть код кольору в HEX-форматі."
+      favicon_heading: Favicon
+      favicon_text: "Завантаження зображення, яке буде відображатися в якості значка форуму."
+      logo_heading: "Логотип"
+      logo_text: "Завантаження зображення, яке буде відображатися замість заголовка форуму."
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
@@ -69,11 +76,31 @@ core:
       submit_button: => core.ref.save_changes
       title: "Створити групу"
 
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: "Спеціальний HTML, який буде відображатися в самому верху сторінки над власним заголовком Flarum."
+      submit_button: => core.ref.save_changes
+      title: "Редагувати заголовок"
+
+    # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: "Аккаунт SMTP"
+      addresses_heading: "Адреси"
+      driver_label: "Драйвер"
+      encryption_label: "Шифрування"
+      from_label: "Відправник"
+      heading: => core.ref.email
+      host_label: "Хост"
+      password_label: => core.ref.password
+      port_label: "Порт"
+      server_heading: "Сервер SMTP"
+      submit_button: => core.ref.save_changes
+      text: "Налаштуйте параметри SMTP та адреси вашого форуму, які будуть використовуватися для відправки e-mail."
+      username_label: => core.ref.username
+
     # These translations are used in the Extensions page.
     extensions:
       add_button: "Додати розширення"
-      disable_button: "Відключити"
-      enable_button: "Включити"
       settings_button: => core.ref.settings
       uninstall_button: "Видалити"
 
@@ -93,6 +120,8 @@ core:
       basics_text: "Налаштування нази форуму, локалізації та інших базових параметрів."
       dashboard_button: "Консоль"
       dashboard_text: "Перший погляд на Ваш форум."
+      email_button: => core.ref.email
+      email_text: "Налаштування параметрів електронної пошти."
       extensions_button: "Розширення"
       extensions_text: "Додавання додаткового функціоналу за допомогою розширень."
       permissions_button: "Розширення"
@@ -117,6 +146,7 @@ core:
       sign_up_label: "Реєстрація"
       start_discussions_label: "Створювати дискусії"
       view_discussions_label: "Читати дискусії"
+      view_post_ips_label: "Дивитися IP-адреси"
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -132,6 +162,11 @@ core:
     # These translations are used in the Settings modal dialog.
     settings:
       submit_button: => core.ref.save_changes
+
+    # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: "Видалити"
+      upload_button: "Вибрати зображення..."
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -206,6 +241,7 @@ core:
       email_label: => core.ref.email
       password_label: => core.ref.password
       submit_button: => core.ref.save_changes
+      title: Edit User
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -265,6 +301,7 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
+      edited_text: "Змінено"
       edited_tooltip: "{username} відредагував(ла) {ago}"
       number_tooltip: "Повідомлення #{number}"
 
@@ -284,6 +321,7 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
+      discussion_renamed_old_tooltip: 'Стара назва була: "{old}"'
       discussion_renamed_text: '{username} змінив(ла) назву з "{old}" на "{new}".'
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
@@ -323,6 +361,7 @@ core:
     user:
       avatar_remove_button: "Видалити"
       avatar_upload_button: "Завантажити"
+      avatar_upload_tooltip: "Завантажити новий аватар"
       bio_placeholder: "Напишіть що-небудь про себе"
       discussions_link: => core.ref.discussions
       in_discussion_text: 'в "{discussion}"'
@@ -374,13 +413,31 @@ core:
       three_text: "{first}, {second} та {third}"
       two_text: "{first} і {second}"
 
-  # Translations in this namespace are used in basic HTML interface.
-  basic:
-    javascript_disabled_message: "Цей сайт найкраще переглядати в сучасному браузері з включеним JavaScript."
-    load_error_message: "Щось пішло не так під час спроби завантаження повної версії цього сайту."
-    loading_text: "Завантаження..."
-    next_page_button: "Наступна сторінка"
-    previous_page_button: "Попередня сторінка"
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: "Цей сайт найкраще переглядати в сучасному браузері з включеним JavaScript."
+      load_error_message: "Щось пішло не так під час спроби завантаження повної версії цього сайту."
+      loading_text: "Завантаження..."
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: "Попередня сторінка"
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset:
+      confirm_password_label: => core.ref.confirm_password
+      password_label: => core.ref.password
+      submit_button: "Скинути пароль"
+      title: => core.ref.reset_your_password
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
@@ -424,6 +481,7 @@ core:
     all_discussions: "Всі дискусії"
     change_email: "Змінити E-mail"
     change_password: "Змінити пароль"
+    confirm_password: "Підтвердити пароль"
     confirmation_email_sent: "Ми відправили лист з підтвердженням на адресу {email}. Якщо Ви не отримаєте лист найближчим часом, перевірте папку зі спамом."
     delete: "Видалити"
     delete_forever: "Видалити (физічно)"
@@ -434,10 +492,12 @@ core:
     log_in: "Увійти"
     log_out: "Вийти"
     mark_all_as_read: "Позначити все, як прочитане"
+    next_page: "Наступна сторінка"
     notifications: "Оповіщення"
     okay: "OK"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
     reply: "Відповісти"                               # Referenced by flarum-mentions.yml
+    reset_your_password: "Скинути пароль"
     restore: "Відновити"
     save_changes: "Зберегти"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Налаштування"
