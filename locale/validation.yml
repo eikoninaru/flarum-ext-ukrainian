@@ -62,7 +62,7 @@ validation:
     array: ":attribute має містити :size елементів."
   string: ":attribute має бути рядком."
   timezone: ":attribute має бути дійсною зоною."
-  unique: ":attribute вже прийнято."
+  unique: ":attribute вже використовується."
   uploaded: ":attribute не вдалося завантажити."
   url: ":attribute неприпустимий формат."
 
