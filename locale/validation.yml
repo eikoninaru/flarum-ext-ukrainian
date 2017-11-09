@@ -2,11 +2,13 @@ validation:
   accepted: ":attribute повинен бути прийнятий."
   active_url: ":attribute не є допустимою URL."
   after: ":attribute має бути дата після :date."
+  after_or_equal: ":attribute має бути датою пізнішою або рівною :date."
   alpha: ":attribute може містити тільки латинські букви."
   alpha_dash: ":attribute може містити тільки латинські букви, цифри та дефіс."
   alpha_num: ":attribute може містити тільки латинські букви та цифри."
   array: ":attribute має бути масивом."
   before: ":attribute має бути дата перед :date."
+  before_or_equal: ":attribute має бути датою до або рівною :date."
   between:
     numeric: ":attribute має бути в межах :min і :max."
     file: ":attribute має бути в межах :min і :max кілобайт."
@@ -30,6 +32,8 @@ validation:
   in_array: "Поле :attribute не існує в :other."
   integer: ":attribute має бути цілим числом."
   ip: ":attribute має бути дійсною IP-адресою."
+  ipv4: ":attribute має бути дійсною IPv4 адресою."
+  ipv6: ":attribute має бути дійсною IPv6 адресою."
   json: ":attribute має бути дійсним рядком JSON."
   max:
     numeric: ":attribute не може бути більше :max."
@@ -76,7 +80,3 @@ validation:
     name_plural: "ім'я в множині"
     tag_count_primary: "число первинних тегів"
     tag_count_secondary: "число вторинних тегів"
-
-  custom:
-    username:
-      regex: "Ім'я користувача може містити тільки латинські букви, цифри та дефіс."

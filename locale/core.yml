@@ -12,6 +12,7 @@ core:
       developer_text: "Якщо Ви розробник, Ви можете <a> прочитати документацію </a> і почати створювати власні розширення."
       install_text: "У той же час, Ви можете знайти розширення на <a> офіційному сайті спільноти Flarum </a> і встановити їх за допомогою Composer."
       temporary_text: "Незабаром, цей діалог дозволить Вам легко додавати розширення на свій форум. Ми створюємо екосистему розширень!"
+      title: "Встановлення розширень"
 
     # These translations are used in the Appearance page.
     appearance:
@@ -42,6 +43,7 @@ core:
       home_page_heading: "Головна сторінка"
       home_page_text: "Виберіть сторінку, яку користувачі будуть бачити при відвідуванні форуму. При введенні призначених для користувача значень, використовуйте шлях щодо кореня форуму."
       saved_message: "Зміни збережені."
+      show_language_selector_label: "Показувати діалог вибору мов"
       submit_button: => core.ref.save_changes
       welcome_banner_heading: "Банер вітання"
       welcome_banner_text: "Введіть текст, який буде відображатися на всіх сторінках форуму. Використовуйте цей елемент для того, щоб вітати гостей форуму."
@@ -147,6 +149,7 @@ core:
       start_discussions_label: "Створювати дискусії"
       view_discussions_label: "Читати дискусії"
       view_post_ips_label: "Дивитися IP-адреси"
+      view_user_list_label: "Дивитися список користувачів"
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -174,7 +177,7 @@ core:
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-      confirm_password_label: "Підтвердіть пароль"
+      confirm_password_placeholder: => core.ref.confirm_password
       dismiss_button: => core.ref.okay
       incorrect_password_message: "Введений Вами пароль невірний."
       submit_button: => core.ref.save_changes
@@ -223,8 +226,7 @@ core:
       delete_confirmation: "Ви впевнені, що хочете видалити дискусію?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: "Увійти для відповіді"
-      rename_button: "Перейменувати"
-      rename_text: "Введіть назву для цієї дискусії:"
+      rename_button: => core.ref.rename
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
@@ -238,10 +240,16 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
+      activate_button: "Активувати користувача"
+      email_heading: => core.ref.email
       email_label: => core.ref.email
+      groups_heading: "Групи"
+      password_heading: => core.ref.password
       password_label: => core.ref.password
+      set_password_label: "Новий пароль"
       submit_button: => core.ref.save_changes
-      title: Edit User
+      title: "Редагування користувача"
+      username_heading: => core.ref.username
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -257,6 +265,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: "Адміністрування"
+      back_to_index_tooltip: "На головну"
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: "Профіль"
@@ -286,6 +295,7 @@ core:
       forgot_password_link: "Забули пароль?"
       invalid_login_message: "Ваші дані для входу некоректні."
       password_placeholder: => core.ref.password
+      remember_me_label: "Запам’ятати Мене"
       sign_up_text: "Немає облікового запису? <a>Реєстрація</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -326,6 +336,11 @@ core:
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} пізніше"
+
+    # These translations are used by the rename discussion modal.
+    rename_discussion:
+      title: "Перейменувати дискусію"
+      submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
     search:
@@ -439,6 +454,10 @@ core:
       submit_button: "Скинути пароль"
       title: => core.ref.reset_your_password
 
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "Ім’я користувача може містити лише літерии, цифри та тире."
+
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
@@ -448,12 +467,12 @@ core:
       body: |
         Привіт, {username}!
 
-        Хтось (сподіваємось , що Ви!) зареєструвався на форумі {forum} і вказав цей E-mail.
+        Хтось (сподіваємось, що Ви!) зареєструвався на форумі {forum} і вказав цей E-mail.
 
         Якщо це були Ви , просто натисніть на посилання і Ваш аккаунт буде активований:
         {url}
 
-        Якщо Ви не реєструвалися , будь ласка проігноруйте це повідомлення.
+        Якщо Ви не реєструвалися, будь ласка проігноруйте це повідомлення.
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
@@ -461,9 +480,9 @@ core:
       body: |
         Привіт, {username}!
 
-        Хтось (сподіваємось , що Ви!) змінив E-mail на форумі {forum}.
+        Хтось (сподіваємось, що Ви!) змінив E-mail на форумі {forum}.
 
-        Якщо це були Ви , просто натисніть на посилання і Ваш  E-mail зміненно:
+        Якщо це були Ви, просто натисніть на посилання і Ваш  E-mail зміненно:
         {url}
 
         Якщо це не Ви, будь ласка проігноруйте це повідомлення.
@@ -474,9 +493,9 @@ core:
       body: |
         Привіт, {username}!
 
-        Хтось (сподіваємось , що Ви!) подав запит на зміну пароля для Вашого облікового запису на форумі {forum}.
+        Хтось (сподіваємось, що Ви!) подав запит на зміну пароля для Вашого облікового запису на форумі {forum}.
 
-        Якщо це були Ви , просто натисніть на посилання для зміни паролю:
+        Якщо це були Ви, просто натисніть на посилання для зміни паролю:
         {url}
 
         Якщо Ви не хочете змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
@@ -505,6 +524,7 @@ core:
     notifications: "Оповіщення"
     okay: "OK"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
+    rename: "Перейменувати"
     reply: "Відповісти"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Скинути пароль"
     restore: "Відновити"
