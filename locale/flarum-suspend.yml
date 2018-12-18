@@ -13,12 +13,16 @@ flarum-suspend:
 
   # Translations in this namespace are used by the forum user interface.
   forum:
+    # These translations are used in the suspension notifications
+    notifications:
+      user_suspended_text: "{username} заблокував Вас на {timeReadable}"
+      user_unsuspended_text: "{username} розблокував Вас"
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
       indefinitely_label: "Заблокований назавжди"
-      limited_time_label: "Заблокований на період..."
       limited_time_days_text: " днів"
+      limited_time_label: "Заблокований на деякий час..."
       not_suspended_label: "Не заблокований"
       status_heading: "Статус блокування"
       submit_button: => core.ref.save_changes
