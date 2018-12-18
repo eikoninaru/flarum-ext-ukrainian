@@ -97,7 +97,7 @@ validation:
   attributes:
     username: "ім'я користувача"
     password: "пароль"
-    email: email
+    email: "email"
     title: "назва"
     content: "зміст"
     name_singular: "ім'я в однині"
