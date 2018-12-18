@@ -18,7 +18,6 @@
     ],
     "support": {
         "issues": "https://github.com/eikoninaru/flarum-ext-ukrainian/issues",
-        "source": "https://github.com/eikoninaru/flarum-ext-ukrainian",
         "forum": "https://linuxmint.com.ua/"
     },
     "require": {
