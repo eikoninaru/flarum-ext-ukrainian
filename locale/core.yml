@@ -22,7 +22,7 @@ core:
       custom_footer_heading: "Користувальницький футер"
       custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: "Користувальницький заголовок"
-      custom_header_text: "Спеціальний HTML, який буде відображатися в самому верху сторінки над власним заголовком Flarum."
+      custom_header_text: core.ref.custom_header_text
       custom_styles_heading: "Призначені для користувача стилі"
       custom_styles_text: "Налаштування зовнішнього вигляду форуму за допомогою призначеного для користувача коду LESS / CSS, який перекриває стандартні стильові конструкції Flarum."
       dark_mode_label: "Темний режим"
@@ -72,9 +72,10 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: "Видалити групу"
-      delete_confirmation: "Ви впевнені , що хочете видалити групу? Користувачі, що знаходяться в цій групі, не будуть видалені."
-      icon_label: "Іконка"
-      icon_text: "Введіть назву будь-якого класу іконки <a>Font Awesome</a>, <em>без</em> префіксу <code>fa-</code>."
+      delete_confirmation: "Ви впевнені, що бажаєте видалити групу? Користувачі, що знаходяться в цій групі, не будуть видалені."
+      hide_label: "Приховати на форумі"
+      icon_label: core.ref.icon
+      icon_text: core.ref.icon_text
       name_label: "Назва"
       plural_placeholder: "Множина (Приклад: Модератори)"
       singular_placeholder: "Однина (Приклад: Модератор)"
@@ -83,25 +84,36 @@ core:
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: "Спеціальний HTML, який буде відображатися в самому верху сторінки над власним заголовком Flarum."
+      customize_text: core.ref.custom_header_text
       submit_button: => core.ref.save_changes
       title: => core.ref.custom_header_title
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: "Аккаунт SMTP"
       addresses_heading: "Адреси"
+      driver_heading: "Виберіть драйвер"
       driver_label: "Драйвер"
-      encryption_label: "Шифрування"
       from_label: "Відправник"
       heading: => core.ref.email
-      host_label: "Хост"
-      password_label: => core.ref.password
-      port_label: "Порт"
-      server_heading: "Сервер SMTP"
+      mail_encryption_label: "Шифрування"
+      mail_host_label: "Хост"
+      mail_mailgun_domain_label: "Домен"
+      mail_mailgun_region_label: Region
+      mail_mailgun_secret_label: Secret key
+      mail_mandrill_secret_label: Secret key
+      mail_password_label: => core.ref.password
+      mail_port_label: "Порт"
+      mail_ses_key_label: Key
+      mail_ses_region_label: Region
+      mail_ses_secret_label: Secret
+      mail_username_label: => core.ref.username
+      mailgun_heading: "Налаштування Mailgun"
+      mandrill_heading: "Налаштування Settings"
+      not_sending_message: "Наразі Flarum не надсилає електронні листи. Це може бути пов’язано з обраним драйвером або помилками в його конфігурації."
+      ses_heading: "Налаштування SES"
+      smtp_heading: "Налаштування SMTP"
       submit_button: => core.ref.save_changes
       text: "Налаштуйте параметри SMTP та адреси вашого форуму, які будуть використовуватися для відправки e-mail."
-      username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
@@ -142,16 +154,19 @@ core:
       delete_posts_forever_label: "Видаляти повідомлення (фізично)"
       delete_posts_label: "Видаляти повідомлення"
       edit_posts_label: "Редагувати повідомлення"
+      edit_users_label: "Редагувати користувачів"
       global_heading: "Глобальні"
       moderate_heading: "Модерація"
       new_group_button: "Нова група"
       participate_heading: "Участь"
+      post_without_throttle_label: "Відповідати кілька разів, не чекаючи"
       read_heading: "Читати"
       rename_discussions_label: "Перейменовувати дискусії"
       reply_to_discussions_label: "Відповідати в дискусіях"
       sign_up_label: "Реєстрація"
       start_discussions_label: "Створювати дискусії"
       view_discussions_label: "Читати дискусії"
+      view_hidden_groups_label: "Дивитися приховані групи"
       view_last_seen_at_label: "Дивитися останні відвідини користувача"
       view_post_ips_label: "Дивитися IP-адреси"
       view_user_list_label: "Дивитися список користувачів"
@@ -205,21 +220,21 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: "Написати повідомлення..."
-      discard_confirmation: "Ви не створили дискусію. Ви хочете скасувати створення дискусії?"
+      discard_confirmation: "Ви не створили дискусію. Ви бажаєте скасувати створення дискусії?"
       submit_button: "Відправити"
       title: => core.ref.start_a_discussion
       title_placeholder: "Назва дискусії"
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "Ви не зберегли зміни. Ви хочете відмовитися від них?"
+      discard_confirmation: "Ви не зберегли зміни. Ви бажаєте відмовитися від них?"
       post_link: "Повідомлення #{number} в {discussion}"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Ви не відправили свою відповідь. Ви хочете скасувати створення повідомлення?"
+      discard_confirmation: "Ви не відправили свою відповідь. Ви бажаєте скасувати створення повідомлення?"
       posted_message: "Ваш відповідь опублікована."
       submit_button: "Відправити"
       view_button: "Переглянути"
@@ -229,7 +244,7 @@ core:
       cannot_reply_button: "Не можна відповісти"
       cannot_reply_text: "У Вас немає прав доступу для публікації відповіді в цій дискусії."
       delete_button: => core.ref.delete
-      delete_confirmation: "Ви впевнені, що хочете видалити дискусію?"
+      delete_confirmation: "Ви впевнені, що бажаєте видалити дискусію?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: "Увійти для відповіді"
       rename_button: => core.ref.rename
@@ -283,7 +298,7 @@ core:
     index:
       all_discussions_link: => core.ref.all_discussions
       cannot_start_discussion_button: "Не можна створити"
-      mark_all_as_read_confirmation: "Ви впевнені, що хочете позначити всі дискусії як прочитані?"
+      mark_all_as_read_confirmation: "Ви впевнені, що бажаєте позначити всі дискусії як прочитані?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: "Оновити"
       start_discussion_button: => core.ref.start_a_discussion
@@ -312,6 +327,7 @@ core:
       discussion_renamed_text: "{username} змінив(ла) назву"
       empty_text: "Немає сповіщень"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: "Позначити як прочитане"
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
@@ -324,8 +340,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "Ви впевнені, що бажаєте видалити повідомлення назавжди? Цю дію неможливо скасувати."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "Ви впевнені, що бажаєте видалити повідомлення?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -352,7 +370,7 @@ core:
     search:
       all_discussions_button: 'Пошук за запитом: "{query}"'
       discussions_heading: => core.ref.discussions
-      users_heading: "Користувачі"
+      users_heading: core.ref.users
 
     # These translations are used in the Settings page.
     settings:
@@ -387,7 +405,7 @@ core:
       in_discussion_text: 'в "{discussion}"'
       joined_date_text: "Приєднався: {ago}"
       online_text: "Онлайн"
-      posts_empty_text: Схоже, що тут ще немає повідомлень.
+      posts_empty_text: "Схоже, що тут ще немає повідомлень."
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
@@ -396,7 +414,9 @@ core:
     user_controls:
       button: "Управління"
       delete_button: => core.ref.delete
-      delete_confirmation: "Ви впевнені, що хочете видалити користувача? Всі повідомлення, написані користувачем, також будуть видалені."
+      delete_confirmation: "Ви впевнені, що бажаєте видалити користувача? Всі повідомлення, написані користувачем, також будуть видалені."
+      delete_error_message: "Не вдалося видалити користувача <i>{username} ({email})</i>"
+      delete_success_message: "Користувача <i>{username} ({email})</i> видалено"
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -450,11 +470,14 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: У вас немає доступу до цієї сторінки :(.
-      404_message: Цієї строінки не існує >_>.
-      404_return_link: "Повернутися на {forum}"
-      500_message: Під час завантаження цієї сторінки сталася помилка. Дуже прикро.
-      503_message: "{forum} проходить технічне обслуговування. Дякуємо за Ваше терпіння!"
+      csrf_token_mismatch: "Ви були неактивні тривалий час."
+      csrf_token_mismatch_return_link: "Поверніться назад і спробуйте ще раз"
+      invalid_confirmation_token: "Посилання для підтвердження недійсне або вже було використане."
+      not_authenticated: "У Вас немає прав доступу до цієї сторінки. Спробуйте ще раз після входу в свій аккаунт."
+      not_found: "Сторінку за Вашим запитом не знайдено."
+      not_found_return_link: "Повернутися на {forum}"
+      permission_denied: "У вас немає доступу до цієї сторінки."
+      unknown: "Під час завантаження цієї сторінки сталася помилка. Дуже прикро."
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -465,7 +488,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "Ви дійсно хочте вийти з {forum}?"
+      log_out_confirmation: "Ви дійсно бажаєте вийти з {forum}?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -519,7 +542,7 @@ core:
         Якщо це були Ви, просто натисніть на посилання для зміни паролю:
         {url}
 
-        Якщо Ви не хочете змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
+        Якщо Ви не бажаєте змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -541,7 +564,9 @@ core:
     delete_forever: "Видалити (физічно)"
     discussions: "Дискусії"
     edit: "Редагувати"
-    email: "email"
+    email: "Email"
+    icon: "Іконка"
+    icon_text: "Введіть назву будь-якого класу іконки <a>Font Awesome</a>, <em>включаючи</em> префіксы <code>fas fa-</code>."
     load_more: "Завантажити ще"
     log_in: "Увійти"
     log_out: "Вийти"
@@ -563,7 +588,7 @@ core:
     some_others: "{count} іншому|{count} іншим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Створити дискусію"
     username: "Ім'я користувача"
-    users: Користувачі                                 # Referenced by flarum-statistics.yml 
+    users: Користувачі                                 # Referenced by flarum-statistics.yml
     write_a_reply: "Написати відповідь..."
     you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 

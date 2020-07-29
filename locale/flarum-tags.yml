@@ -18,6 +18,8 @@ flarum-tags:
       delete_tag_confirmation: "Ви впевнені , що хочете видалити розділ? Дискусії в цьому розділі видалені не будуть."
       description_label: "Опис"
       hide_label: "Приховати зі списку дискусій"
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
       slug_label: "Шлях"
@@ -55,6 +57,11 @@ flarum-tags:
   # Translations in this namespace are used by the forum user interface.
   forum:
 
+    # These translations are displayed on the page that lists all tags.
+    all_tags:
+      meta_description_text: "Всі розділи"
+      meta_title_text: => flarum-tags.ref.tags
+
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
       choose_primary_placeholder: "Вкажіть основний розділ|Вкажіть {count} основних розділів"
@@ -86,6 +93,10 @@ flarum-tags:
       added_tags_text: "{username} додав(ла) {tagsAdded}."
       removed_tags_text: "{username} видалив(ла) {tagsRemoved}."
       tags_text: "розділ {tags}|розділи {tags}"
+
+    # These translations are used when visiting a single tag's discussion list.
+    tag:
+      meta_description_text: "Всі дискусії з тегом {tag}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:

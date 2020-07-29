@@ -9,11 +9,12 @@ flarum-markdown:
 
     # These translations are used by the composer (emoji autocompletion function).
     composer:
-      bold_tooltip: Жирний
-      code_tooltip: Код
-      header_tooltip: Заголовок
-      italic_tooltip: Курсив
-      link_tooltip: Посилання
-      ordered_list_tooltip: Нумерованний список
-      quote_tooltip: Цитата
-      unordered_list_tooltip: Маркованний список
+      bold_tooltip: "Жирний"
+      code_tooltip: "Код"
+      header_tooltip: "Заголовок"
+      image_tooltip: "Додати зображення"
+      italic_tooltip: "Курсив"
+      link_tooltip: "Посилання"
+      ordered_list_tooltip: "Нумерованний список"
+      quote_tooltip: "Цитата"
+      unordered_list_tooltip: "Маркованний список"
