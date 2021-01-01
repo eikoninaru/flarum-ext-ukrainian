@@ -1,8 +1,8 @@
 flarum-tags:
 
-  ###
+  ##
   # UNIQUE KEYS - The following keys are used in only one location each.
-  ###
+  ##
 
   # Translations in this namespace are used by the admin interface.
   admin:
@@ -24,7 +24,7 @@ flarum-tags:
       name_placeholder: => flarum-tags.ref.name
       slug_label: "Шлях"
       submit_button: => core.ref.save_changes
-      title: => flarum-tags.ref.create_tag
+      title: "Створити розділ"
 
     # These translations are used in the navigation bar.
     nav:
@@ -49,10 +49,11 @@ flarum-tags:
     # These translations are used in the Tags page.
     tags:
       about_tags_text: "Розділи використовуються для структурування дискусій. Основні розділи можуть являти собою дворівневу ієрархію. Додаткові розділи не мають ієрархії та можуть бути корисні для мікро-структурування. Розділи з додаткових в основні можна конвертувати шляхом простого перетягування мишкою."
-      create_tag_button: => flarum-tags.ref.create_tag
+      create_primary_tag_button: "Створити основний розділ"
+      create_secondary_tag_button: "Створити додатковий розділ"
       primary_heading: "Основні"
       secondary_heading: "Додаткові"
-      settings_button: "Налаштування"
+      settings_heading: "Налаштування"
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -79,7 +80,7 @@ flarum-tags:
       edit_tags_button: "Редагувати розділи"
 
     header:
-      back_to_tags_tooltip: Повернутися до списку розділів
+      back_to_tags_tooltip: "Повернутися до списку розділів"
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
@@ -110,6 +111,5 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: "Створити розділ"
     name: "Назва"
     tags: "Розділи"

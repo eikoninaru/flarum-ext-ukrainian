@@ -7,21 +7,24 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "sizonov_stas",
+            "name": "Stanislav Syzonov",
             "email": "root@linuxmint.com.ua",
-            "homepage": "https://linuxmint.com.ua/"
+            "homepage": "https://www.linuxmint.com.ua/"
         },
 	{
      	    "name": "Igor Kiselyuk",
      	    "homepage": "http://netishin.com.ua/"
+    	},
+    	{   "name": "Dmytro Shovchko",
+    	    "homepage": "https://github.com/dshovchko"
     	}
     ],
     "support": {
         "issues": "https://github.com/eikoninaru/flarum-ext-ukrainian/issues",
-        "forum": "https://linuxmint.com.ua/"
+        "forum": "https://www.linuxmint.com.ua/"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.13"
+        "flarum/core": "^0.1.0-beta.14"
     },
     "extra": {
         "branch-alias": {

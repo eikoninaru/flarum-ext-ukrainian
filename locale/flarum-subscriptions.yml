@@ -1,8 +1,8 @@
 flarum-subscriptions:
 
-  ###
+  ##
   # UNIQUE KEYS - The following keys are used in only one location each.
-  ###
+  ##
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -17,6 +17,10 @@ flarum-subscriptions:
       follow_button: => flarum-subscriptions.ref.follow
       unfollow_button: "Відписатись"
       unignore_button: "Не ігнорувати"
+
+    # These translations are used on the page that displays all subscriptions.
+    following:
+      meta_title_text: => flarum-subscriptions.ref.following
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
@@ -42,6 +46,28 @@ flarum-subscriptions:
       not_following_text: "Повідомляти лише коли @згадують."
       notify_alert_tooltip: "Отримувати сповіщення форуму при появі нових повідомлень"
       notify_email_tooltip: "Отримувати листи на E-mail при появі нових повідомлень"
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when a post is made in a subscribed discussion
+    new_post:
+      subject: "[New Post] {title}"
+      body: |
+        Привіт! {recipient_display_name}!
+
+        {poster_display_name} зробив допис в дискусії, яку ви відстежуєте: {title}.
+
+        Щоб переглянути цей пост, перейдіть за посиланням:
+        {url}
+
+        ---
+
+        {content}
+
+        ---
+
+        Ви більше не отримуватимете сповіщень про цю дискусію, поки не переглянете форум під своїм обліковим записом.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!

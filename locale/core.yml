@@ -2,17 +2,10 @@ core:
 
   ##
   # UNIQUE KEYS - The following keys are used in only one location each.
-  ###
+  ##
 
   # Translations in this namespace are used by the admin interface.
   admin:
-
-    # These translations are used in the placeholder Add Extension modal dialog.
-    add_extension:
-      developer_text: "Якщо Ви розробник, Ви можете <a> прочитати документацію </a> і почати створювати власні розширення."
-      install_text: "У той же час, Ви можете знайти розширення на <a> офіційному сайті спільноти Flarum </a> і встановити їх за допомогою Composer."
-      temporary_text: "Незабаром, цей діалог дозволить Вам легко додавати розширення на свій форум. Ми створюємо екосистему розширень!"
-      title: "Встановлення розширень"
 
     # These translations are used in the Appearance page.
     appearance:
@@ -22,24 +15,29 @@ core:
       custom_footer_heading: "Користувальницький футер"
       custom_footer_text: => core.ref.custom_footer_text
       custom_header_heading: "Користувальницький заголовок"
-      custom_header_text: core.ref.custom_header_text
+      custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: "Призначені для користувача стилі"
       custom_styles_text: "Налаштування зовнішнього вигляду форуму за допомогою призначеного для користувача коду LESS / CSS, який перекриває стандартні стильові конструкції Flarum."
       dark_mode_label: "Темний режим"
+      description: "Налаштуйте кольори, лого та інші змінні вашого форуму."
       edit_css_button: "Редагувати CSS"
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
       enter_hex_message: "Будь ласка, введіть код кольору в HEX-форматі."
       favicon_heading: Favicon
-      favicon_text: "Завантаження зображення, яке буде відображатися в якості значка форуму."
+      favicon_text: "Завантажте зображення, яке буде відображатися в якості значка форуму."
       logo_heading: "Логотип"
       logo_text: "Завантаження зображення, яке буде відображатися замість заголовка форуму."
       submit_button: => core.ref.save_changes
+      title: "Зовнішній вигляд"
 
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: "Мова за замовчуванням"
+      description: "Встановіть назву форуму, мову та інші основні налаштування."
+      display_name_heading: "Відображуване ім’я користувача"
+      display_name_text: "Виберіть драйвер, який слід використовувати для відображуваних імен користувачів. За замовчуванням відображається ім'я користувача."
       forum_description_heading: "Опис форуму"
       forum_description_text: "Введіть короткий опис спільноти. Опис з'явиться в meta-тегу і буде відображатися в пошукових системах."
       forum_title_heading: "Назва форуму"
@@ -47,14 +45,19 @@ core:
       home_page_text: "Виберіть сторінку, яку користувачі будуть бачити при відвідуванні форуму. При введенні призначених для користувача значень, використовуйте шлях щодо кореня форуму."
       saved_message: "Зміни збережені."
       show_language_selector_label: "Показувати діалог вибору мов"
+      slug_driver_heading: "Драйвер URL{model}"
+      slug_driver_text: "Виберіть драйвер для використання дружнього URL."
       submit_button: => core.ref.save_changes
+      title: "Загальні налаштування"
       welcome_banner_heading: "Банер вітання"
       welcome_banner_text: "Введіть текст, який буде відображатися на всіх сторінках форуму. Використовуйте цей елемент для того, щоб вітати гостей форуму."
 
     # These translations are used in the Dashboard page.
     dashboard:
-      clear_cache_button: Очистити кеш
-      tools_button: Iнструменти
+      clear_cache_button: "Очистити кеш"
+      description: "Перший погляд на ваш форум."
+      title: "Консоль"
+      tools_button: "Iнструменти"
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -74,8 +77,8 @@ core:
       delete_button: "Видалити групу"
       delete_confirmation: "Ви впевнені, що бажаєте видалити групу? Користувачі, що знаходяться в цій групі, не будуть видалені."
       hide_label: "Приховати на форумі"
-      icon_label: core.ref.icon
-      icon_text: core.ref.icon_text
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: "Назва"
       plural_placeholder: "Множина (Приклад: Модератори)"
       singular_placeholder: "Однина (Приклад: Модератор)"
@@ -84,45 +87,58 @@ core:
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
-      customize_text: core.ref.custom_header_text
+      customize_text: => core.ref.custom_header_text
       submit_button: => core.ref.save_changes
       title: => core.ref.custom_header_title
 
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: "Адреси"
+      description: "Налаштування для надсилання електронних листів."
       driver_heading: "Виберіть драйвер"
       driver_label: "Драйвер"
       from_label: "Відправник"
-      heading: => core.ref.email
       mail_encryption_label: "Шифрування"
       mail_host_label: "Хост"
       mail_mailgun_domain_label: "Домен"
       mail_mailgun_region_label: Region
       mail_mailgun_secret_label: Secret key
-      mail_mandrill_secret_label: Secret key
       mail_password_label: => core.ref.password
       mail_port_label: "Порт"
-      mail_ses_key_label: Key
-      mail_ses_region_label: Region
-      mail_ses_secret_label: Secret
       mail_username_label: => core.ref.username
       mailgun_heading: "Налаштування Mailgun"
-      mandrill_heading: "Налаштування Settings"
       not_sending_message: "Наразі Flarum не надсилає електронні листи. Це може бути пов’язано з обраним драйвером або помилками в його конфігурації."
-      ses_heading: "Налаштування SES"
-      smtp_heading: "Налаштування SMTP"
+      send_test_mail_button: Відправити
+      send_test_mail_heading: Відправити тестового листа
+      send_test_mail_success: "Тестовий лист надіслано успішно!"
+      send_test_mail_text: "Електронний лист із вказаною вище конфігурацією буде відправлено на вашу адресу, {email}."
+      smtp_heading: SMTP Settings
       submit_button: => core.ref.save_changes
-      text: "Налаштуйте параметри SMTP та адреси вашого форуму, які будуть використовуватися для відправки e-mail."
+      title: => core.ref.email
 
-    # These translations are used in the Extensions page.
-    extensions:
-      add_button: "Додати розширення"
-      settings_button: => core.ref.settings
+    # These translations are used on default extension pages.
+    extension:
+      confirm_uninstall: "Буде видалено усі записи бази даних та ресурси, пов’язані з розширенням. Ви впевнені, що хочете продовжити?"
+      disabled: "Вимкнено"
+      enabled: "Увімкнено"
+      enable_to_see: "Увімкніть розширення для перегляду і зміни налаштувань."
+      info_links:
+        discuss: "Обговорення"
+        documentation: "Документація"
+        donate: "Пожертвувати"
+        source: "Джерело"
+        support: "Підтримка"
+        website: "Вебсайт"
+      no_permissions: "Це розширення не має дозволів."
+      no_settings: "Це розширення не має налаштувань."
+      open_modal: "Відкрити налаштування"
+      permissions_title: "Дозволи"
+      saved_message: "Ваші налаштування збережено."
       uninstall_button: "Видалити"
 
-    # These translations are used in the session dropdown menu.
+    # These translations are used in the secondary header.
     header:
+      get_help: "Отримати допомогу"
       log_out_button: => core.ref.log_out
 
     # These translations are used in the modal dialog displayed when loading extensions.
@@ -131,18 +147,27 @@ core:
 
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: "Оформлення"
-      appearance_text: "Налаштування кольорів, логотипів та інших змінних."
-      basics_button: "Основні налаштування"
-      basics_text: "Налаштування нази форуму, локалізації та інших базових параметрів."
-      dashboard_button: "Консоль"
-      dashboard_text: "Перший погляд на Ваш форум."
+      appearance_button: => core.admin.appearance.title
+      appearance_title: => core.admin.appearance.description
+      basics_button: => core.admin.basics.title
+      basics_title: => core.admin.basics.description
+      categories:
+        authentication: "Автентифікація"
+        core: "Основна конфігурація"
+        discussion: "Дискусії"
+        feature: "Особливості"
+        formatting: "Форматування"
+        language: "Мови"
+        moderation: "Модерація"
+        other: "Інші розширення"
+        theme: "Теми"
+      dashboard_button: => core.admin.dashboard.title
+      dashboard_title: => core.admin.dashboard.description
       email_button: => core.ref.email
-      email_text: "Налаштування параметрів електронної пошти."
-      extensions_button: "Розширення"
-      extensions_text: "Додавання додаткового функціоналу за допомогою розширень."
-      permissions_button: "Дозволи"
-      permissions_text: "Налаштування прав доступу для груп користувачів."
+      email_title: => core.admin.email.description
+      permissions_button: => core.admin.permissions.title
+      permissions_title: => core.admin.permissions.description
+      search_placeholder: "Пошук розширень"
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
@@ -153,6 +178,7 @@ core:
       delete_discussions_label: "Видаляти дискусії"
       delete_posts_forever_label: "Видаляти повідомлення (фізично)"
       delete_posts_label: "Видаляти повідомлення"
+      description: "Налаштування дозволу груп".
       edit_posts_label: "Редагувати повідомлення"
       edit_users_label: "Редагувати користувачів"
       global_heading: "Глобальні"
@@ -165,6 +191,7 @@ core:
       reply_to_discussions_label: "Відповідати в дискусіях"
       sign_up_label: "Реєстрація"
       start_discussions_label: "Створювати дискусії"
+      title: "Дозволи"
       view_discussions_label: "Читати дискусії"
       view_hidden_groups_label: "Дивитися приховані групи"
       view_last_seen_at_label: "Дивитися останні відвідини користувача"
@@ -228,8 +255,10 @@ core:
     # These translations are used by the composer when editing a post.
     composer_edit:
       discard_confirmation: "Ви не зберегли зміни. Ви бажаєте відмовитися від них?"
+      edited_message: "Зміни збережено."
       post_link: "Повідомлення #{number} в {discussion}"
       submit_button: => core.ref.save_changes
+      view_button: => core.ref.view
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
@@ -300,6 +329,7 @@ core:
       cannot_start_discussion_button: "Не можна створити"
       mark_all_as_read_confirmation: "Ви впевнені, що бажаєте позначити всі дискусії як прочитані?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      meta_title_text: => core.ref.all_discussions
       refresh_tooltip: "Оновити"
       start_discussion_button: => core.ref.start_a_discussion
 
@@ -370,7 +400,7 @@ core:
     search:
       all_discussions_button: 'Пошук за запитом: "{query}"'
       discussions_heading: => core.ref.discussions
-      users_heading: core.ref.users
+      users_heading: => core.ref.users
 
     # These translations are used in the Settings page.
     settings:
@@ -434,7 +464,9 @@ core:
 
     # These translations are displayed as error messages.
     error:
+      dependent_extensions_message: "Неможливо вимкнути {extension}, доки не буде вимкнено такі залежні розширення: {extensions}"
       generic_message: "Помилка. Будь ласка , оновіть сторінку та спробуйте ще раз."
+      missing_dependencies_message: "Неможливо ввімкнути {extension}, доки не ввімкнемо такі залежності: {extensions}"
       not_found_message: "Ресурс не знайдено."
       permission_denied_message: "У Вас немає прав доступу для виконання цієї дії."
       rate_limit_exceeded_message: "Ви розміщуєте повідомлення занадто часто. Будь ласка , спробуйте ще раз через деякий час."
@@ -493,8 +525,8 @@ core:
 
     # Translations in this namespace are displayed by the Reset Password interface.
     reset_password:
-      confirm_password_label: Підтвердити новий пароль
-      new_password_label: Новий пароль
+      confirm_password_label: "Підтвердити новий пароль"
+      new_password_label: "Новий пароль"
       submit_button: => core.ref.save_changes
       title: => core.ref.reset_your_password
 
@@ -542,7 +574,19 @@ core:
         Якщо це були Ви, просто натисніть на посилання для зміни паролю:
         {url}
 
-        Якщо Ви не бажаєте змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
+         Якщо Ви не бажаєте змінювати свій пароль, просто проігноруйте це повідомлення і нічого не станеться.
+
+    # These translations are used when testing mailing configuration
+    send_test:
+      subject: Тестовий лист Flarum
+      body: |
+        Привіт {username}!
+
+       Це тестове повідомлення того, що електоронна пошта Flarum налаштована.
+
+       Якщо це були ви, цей електронний лист означає, що ваша конфігурація працює!
+
+        Якщо це були не ви, проігноруйте цей електронний лист.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -553,13 +597,13 @@ core:
     all_discussions: "Всі дискусії"
     change_email: "Змінити email"
     change_password: "Змінити пароль"
-    color: Колір                                 # Referenced by flarum-tags.yml
+    color: "Колір"                                 # Referenced by flarum-tags.yml
     confirm_password: "Підтвердити пароль"
     confirmation_email_sent: "Ми відправили лист з підтвердженням на адресу {email}. Якщо Ви не отримаєте лист найближчим часом, перевірте теку зі спамом."
-    custom_footer_text: Додати HTML-код який відображатиметься внизу кожної сторінки.
-    custom_footer_title: Редагувати кастомний футер
+    custom_footer_text: "Додати HTML-код який відображатиметься внизу кожної сторінки."
+    custom_footer_title: "Редагувати кастомний футер"
     custom_header_text: "Додати HTML-код, який відображатиметься угорі сторінки"
-    custom_header_title: Редагувати кастомну шапку
+    custom_header_title: "Редагувати кастомну шапку"
     delete: "Видалити"
     delete_forever: "Видалити (физічно)"
     discussions: "Дискусії"
@@ -575,9 +619,9 @@ core:
     notifications: "Оповіщення"
     okay: "OK"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
-    posts: Повідомлення                                 # Referenced by flarum-statistics.yml
-    previous_page: Попередня сторінка
-    remove: Видалити
+    posts: "Повідомлення"                                # Referenced by flarum-statistics.yml
+    previous_page: "Попередня сторінка"
+    remove: "Видалити"
     rename: "Перейменувати"
     reply: "Відповісти"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Скинути пароль"
@@ -588,7 +632,8 @@ core:
     some_others: "{count} іншому|{count} іншим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Створити дискусію"
     username: "Ім'я користувача"
-    users: Користувачі                                 # Referenced by flarum-statistics.yml
+    users: "Користувачі"                                # Referenced by flarum-statistics.yml
+    view: "Перегляд"
     write_a_reply: "Написати відповідь..."
     you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 

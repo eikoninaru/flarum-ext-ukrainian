@@ -72,6 +72,7 @@ validation:
   not_in: "Обраний :attribute недійсний."
   not_regex: ":attribute не валідний формат."
   numeric: ":attribute має бути числом."
+  password: "Пароль неправильний."
   present: "Поле :attribute має бути присутнім."
   regex: ":attribute неприпустимий формат"
   required: "Поле :attribute вимагається."

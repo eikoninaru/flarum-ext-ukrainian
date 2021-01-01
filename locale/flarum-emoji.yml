@@ -1,6 +1,6 @@
 flarum-emoji:
 
-  ###
+  ##
   # UNIQUE KEYS - The following keys are used in only one location each.
   ##
 
@@ -9,5 +9,5 @@ flarum-emoji:
 
     # These translations are used by the composer (emoji autocompletion function).
     composer:
-      emoji_tooltip: Вставити емоджі
-      type_to_search_text: Для пошуку емоджі, почніть печатати (англ.)
+      emoji_tooltip: "Вставити емоджі"
+      type_to_search_text: "Для пошуку емоджі, почніть печатати (англ.)"
