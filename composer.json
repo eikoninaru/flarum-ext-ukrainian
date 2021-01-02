@@ -21,7 +21,7 @@
     ],
     "support": {
         "issues": "https://github.com/eikoninaru/flarum-ext-ukrainian/issues",
-        "forum": "https://www.linuxmint.com.ua/"
+        "forum": "https://discuss.flarum.org/d/2614-ukrainian-language-pack"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.15"
