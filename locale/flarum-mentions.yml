@@ -4,6 +4,16 @@ flarum-mentions:
   # UNIQUE KEYS - The following keys are used in only one location each.
   ##
 
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the mentions Settings page.
+    settings:
+      allow_username_format_label: "Дозволити формат згадування користувача (@Username)"
+      allow_username_format_text: "Поточний формат для згадок користувачів: @\"Display Name\"#ID.\nЦей параметр дозволяє використовувати старий формат @Username, однак він все одно буде перетворений у новий формат після збереження.\n"
+
+
+
   # Translations in this namespace are used by the forum user interface.
   forum:
 
@@ -36,7 +46,11 @@ flarum-mentions:
     user:
       mentions_link: "Згадування"
 
-      # Translations in this namespace are used in emails sent by the forum.
+    # These translations are used in the post mentions
+    post_mention:
+      deleted_text: "[невідомо]"
+
+  # Translations in this namespace are used in emails sent by the forum.
   email:
 
     # These translations are used in emails sent when a post is replied to
