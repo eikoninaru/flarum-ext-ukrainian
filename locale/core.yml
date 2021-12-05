@@ -240,7 +240,7 @@ core:
             visibility_show: "Показати email"
 
           group_badges:
-            no_badges: "Жодного"
+            no_badges: "Жодної"
             title: "Групи"
 
           join_time:
