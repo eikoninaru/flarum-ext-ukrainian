@@ -3,7 +3,15 @@
     "type": "flarum-extension",
     "description": "Ukrainian language pack for Flarum.",
     "homepage": "https://github.com/eikoninaru/flarum-ext-ukrainian",
-    "keywords": ["locale"],
+    "keywords": [
+        "extension",
+        "flarum",
+        "ukrainian",
+        "language",
+        "locale",
+        "localization",
+        "translation"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +19,7 @@
             "email": "root@linuxmint.com.ua",
             "homepage": "https://www.linuxmint.com.ua/"
         },
-	{
+	    {
      	    "name": "Igor Kiselyuk",
      	    "homepage": "http://netishin.com.ua/"
     	},
@@ -24,7 +32,7 @@
         "forum": "https://discuss.flarum.org/d/2614-ukrainian-language-pack"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.15"
+        "flarum/core": "^1.0"
     },
     "extra": {
         "branch-alias": {

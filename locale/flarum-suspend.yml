@@ -15,8 +15,8 @@ flarum-suspend:
   forum:
     # These translations are used in the suspension notifications
     notifications:
-      user_suspended_text: "{username} заблокував Вас на {timeReadable}"
-      user_unsuspended_text: "{username} розблокував Вас"
+      user_suspended_text: "Ви заблоковані на {timeReadable}"
+      user_unsuspended_text: "Ви розблоковані"
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:

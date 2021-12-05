@@ -23,7 +23,7 @@ flarum-likes:
     post:
       like_link: "Подобається"
       liked_by_self_text: "{users} подобається це."
-      liked_by_text: "{users} подобається це.|{users} подобається це."
+      liked_by_text: '{count, plural, one {{users} подобається це} other {{users} подобається це}}.'
       others_link: => core.ref.some_others
       unlike_link: "Не подобається"
       you_text: => core.ref.you
